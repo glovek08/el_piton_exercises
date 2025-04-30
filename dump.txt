@@ -1,0 +1,85 @@
+  1           0 LOAD_CONST               0 (<code object to_power at 0x7bc82db0c2f0, file "power-of.py", line 1>)
+              2 LOAD_CONST               1 ('to_power')
+              4 MAKE_FUNCTION            0
+              6 STORE_NAME               0 (to_power)
+
+  7           8 LOAD_NAME                1 (print)
+             10 LOAD_CONST               2 ('The result of 2^100 is: ')
+             12 LOAD_CONST               3 ('{:.2f}')
+             14 LOAD_METHOD              2 (format)
+             16 LOAD_CONST               4 (2)
+             18 LOAD_CONST               5 (100)
+             20 BINARY_POWER
+             22 CALL_METHOD              1
+             24 LOAD_CONST               6 (None)
+             26 LOAD_CONST               7 (5)
+             28 BUILD_SLICE              2
+             30 BINARY_SUBSCR
+             32 BINARY_ADD
+             34 LOAD_CONST               8 ('e+26')
+             36 BINARY_ADD
+             38 CALL_FUNCTION            1
+             40 POP_TOP
+
+  8          42 LOAD_CONST               7 (5)
+             44 STORE_NAME               3 (num)
+
+  9          46 LOAD_CONST               5 (100)
+             48 STORE_NAME               4 (exp)
+
+ 10          50 LOAD_NAME                1 (print)
+             52 LOAD_CONST               9 ('The result of ')
+             54 LOAD_NAME                3 (num)
+             56 FORMAT_VALUE             0
+             58 LOAD_CONST              10 ('^')
+             60 LOAD_NAME                4 (exp)
+             62 FORMAT_VALUE             0
+             64 LOAD_CONST              11 (' is: ')
+             66 LOAD_NAME                5 (str)
+             68 LOAD_NAME                0 (to_power)
+             70 LOAD_NAME                3 (num)
+             72 LOAD_NAME                4 (exp)
+             74 CALL_FUNCTION            2
+             76 CALL_FUNCTION            1
+             78 FORMAT_VALUE             0
+             80 BUILD_STRING             6
+             82 CALL_FUNCTION            1
+             84 POP_TOP
+             86 LOAD_CONST               6 (None)
+             88 RETURN_VALUE
+
+Disassembly of <code object to_power at 0x7bc82db0c2f0, file "power-of.py", line 1>:
+  2           0 LOAD_GLOBAL              0 (str)
+              2 LOAD_FAST                0 (base)
+              4 LOAD_FAST                1 (exponent)
+              6 BINARY_POWER
+              8 CALL_FUNCTION            1
+             10 STORE_FAST               2 (result)
+
+  3          12 LOAD_GLOBAL              1 (len)
+             14 LOAD_FAST                2 (result)
+             16 CALL_FUNCTION            1
+             18 LOAD_CONST               1 (10)
+             20 COMPARE_OP               4 (>)
+             22 POP_JUMP_IF_FALSE       28 (to 56)
+
+  4          24 LOAD_FAST                2 (result)
+             26 LOAD_CONST               0 (None)
+             28 LOAD_CONST               1 (10)
+             30 BUILD_SLICE              2
+             32 BINARY_SUBSCR
+             34 LOAD_CONST               2 ('e+')
+             36 BINARY_ADD
+             38 LOAD_GLOBAL              0 (str)
+             40 LOAD_GLOBAL              1 (len)
+             42 LOAD_FAST                2 (result)
+             44 CALL_FUNCTION            1
+             46 LOAD_CONST               3 (1)
+             48 BINARY_SUBTRACT
+             50 CALL_FUNCTION            1
+             52 BINARY_ADD
+             54 STORE_FAST               2 (result)
+
+  5     >>   56 LOAD_FAST                2 (result)
+             58 RETURN_VALUE
+
