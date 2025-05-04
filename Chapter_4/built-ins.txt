@@ -1,0 +1,108 @@
+A
+ abs(x) -> absolute value of a number.
+ aiter(async_iterable) -> async iterator for an async iterable, same as calling x.__alter__()
+ all(iterable) -> true if all elements of the iterable are true (or if the iterable is empty)
+ anext(async_iterator) -> when awaited, return the next item from the given async iterator,    or default.
+ any(iterable) -> True if any element of the iterable is true, false if empty
+ ascii(object) -> String containing a printable representation of an object. 
+ 
+B
+ bin(x) -> Convert int to binary string prefixed with "0b"
+ bool(object=False, /) -> Return a Boolean value, i.e. one of True or False. The argument is   converted using the standard truth testing procedure. If the argument is false or omitted,    this returns False; otherwise, it returns True.
+ breakpoint(*args, **kws) -> Drops you into the debugger at the call site, it calls sys.       breakpointhook().
+ bytearray(source=b'') -> New array of bytes. accept @encoding, @errors.
+ bytes(source=b'') -> Immutable sequence of bytes. Accepts encoding and errors for strings.
+
+C
+ callable(object) -> Return True if the object appears callable, False otherwise.
+ chr(i) -> Return the string representing a character whose Unicode code point is the integer i.
+ classmethod(function) -> Convert a function to be a class method.
+ compile(source, filename, mode, flags=0, dont_inherit=False, optimize=-1) -> Compile source into a code or AST object.
+ complex([real[, imag]]) -> Create a complex number with real and imaginary parts.
+
+D
+ delattr(object, name) -> Delete a named attribute on an object.
+ dict(**kwargs) -> Create a new dictionary, optionally with key-value pairs.
+ dir([object]) -> Return a list of valid attributes for the object or current local scope.
+ divmod(a, b) -> Return a pair of numbers (a // b, a % b).
+
+E
+ enumerate(iterable, start=0) -> Return an enumerate object.
+ eval(expression, globals=None, locals=None) -> Evaluate a Python expression.
+ exec(object, globals=None, locals=None) -> Execute Python code dynamically.
+
+F
+ filter(function, iterable) -> Construct an iterator from those elements of iterable for which function returns true.
+ float([x]) -> Convert a string or number to a floating point number.
+ format(value, format_spec='') -> Return value formatted according to format_spec.
+ frozenset([iterable]) -> Return a new frozenset object, optionally with elements from iterable.
+
+G
+ getattr(object, name[, default]) -> Return the value of the named attribute of object.
+ globals() -> Return a dictionary representing the current global symbol table.
+
+H
+ hasattr(object, name) -> Return whether the object has an attribute with the given name.
+ hash(object) -> Return the hash value of the object (if it has one).
+ help([object]) -> Invoke the built-in help system.
+ hex(x) -> Convert an integer number to a lowercase hexadecimal string.
+
+I
+ id(object) -> Return the "identity" of an object.
+ input([prompt]) -> Read a line from input, optionally with a prompt.
+ int([x[, base]]) -> Convert a number or string to an integer.
+ isinstance(object, classinfo) -> Return whether an object is an instance of a class or a subclass thereof.
+ issubclass(class, classinfo) -> Return whether a class is a subclass of another class or a tuple of classes.
+ iter(object[, sentinel]) -> Return an iterator object.
+
+L
+ len(s) -> Return the number of items in an object.
+ list([iterable]) -> Create a new list.
+ locals() -> Return a dictionary representing the current local symbol table.
+
+M
+ map(function, iterable, ...) -> Return an iterator that applies function to every item of iterable.
+ max(iterable, *[, key, default]) -> Return the largest item in an iterable or among two or more arguments.
+ memoryview(obj) -> Return a memory view object of the given argument.
+ min(iterable, *[, key, default]) -> Return the smallest item in an iterable or among two or more arguments.
+
+N
+ next(iterator[, default]) -> Retrieve the next item from the iterator. If default is provided, return it if the iterator is exhausted.
+
+O
+ object() -> Return a new featureless object.
+ oct(x) -> Convert an integer to an octal string.
+ open(file, mode='r', buffering=-1, encoding=None, errors=None, newline=None, closefd=True, opener=None) -> Open a file and return a stream.
+ ord(c) -> Return the Unicode code point for a one-character string.
+
+P
+ pow(x, y[, z]) -> Return x to the power y, modulo z if present.
+ print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False) -> Print objects to a stream.
+ property(fget=None, fset=None, fdel=None, doc=None) -> Return a property attribute.
+
+R
+ range(start, stop[, step]) -> Return an immutable sequence of numbers.
+ repr(object) -> Return a string containing a printable representation of an object.
+ reversed(seq) -> Return a reverse iterator.
+ round(number[, ndigits]) -> Round a number to a given precision in decimal digits.
+
+S
+ set([iterable]) -> Return a new set object.
+ setattr(object, name, value) -> Set the value of a named attribute of an object.
+ slice(start, stop[, step]) -> Return a slice object.
+ sorted(iterable, *, key=None, reverse=False) -> Return a new sorted list.
+ staticmethod(function) -> Convert a method to be a static method.
+ str(object='') -> Return a str version of an object.
+ sum(iterable, /, start=0) -> Return the sum of a 'start' value (default: 0) plus an iterable of numbers.
+ super([type[, object_or_type]]) -> Return a proxy object that delegates method calls to a parent or sibling class.
+
+T
+ tuple([iterable]) -> Return a tuple from an iterable.
+ type(object) -> Return the type of an object.
+ type(name, bases, dict) -> Create a new type (class).
+U
+ vars() -> Return the __dict__ attribute for a module, class, instance, or any other object with a __dict__ attribute.
+
+Z
+ zip(*iterables) -> Return an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences.
+ __import__(name, globals=None, locals=None, fromlist=(), level=0) -> Import a module. This is useful for dynamically importing.

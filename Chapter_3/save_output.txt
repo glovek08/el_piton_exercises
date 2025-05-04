@@ -1,0 +1,6 @@
+This is the output of 'script1.py' using stream redirection. e.g:
+$python3 script1.py > save_output.txt
+
+linux
+1267650600228229401496703205376
+SPAM!SPAM!SPAM!SPAM!SPAM!SPAM!SPAM!SPAM!
